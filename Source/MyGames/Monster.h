@@ -17,8 +17,8 @@ public:
 
 	UPROPERTY()
 		int32 MyIntProp;
-	UPROPERTY()
-		USphereComponent* MyCollisionComp;
+	//UPROPERTY()
+		//USphereComponent* MyCollisionComp;
 
 protected:
 	// Called when the game starts or when spawned

@@ -11,9 +11,9 @@ AMonster::AMonster()
 
 	MyIntProp = 42;
 
-	MyCollisionComp = CreateDefaultSubobject<USphereComponent>(FName(TEXT("CollisionComponent")));
-	MyCollisionComp->RelativeLocation = FVector::ZeroVector;
-	MyCollisionComp->SphereRadius = 20.0f;
+	//MyCollisionComp = CreateDefaultSubobject<USphereComponent>(FName(TEXT("CollisionComponent")));
+	//MyCollisionComp->RelativeLocation = FVector::ZeroVector;
+	//MyCollisionComp->SphereRadius = 20.0f;
 
 }
 
