@@ -32,6 +32,7 @@ void AAvatar::SetupPlayerInputComponent(class UInputComponent* PlayerInputCompon
 	InputComponent->BindAxis("MoveForward", this, &AAvatar::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AAvatar::MoveRight);
 	InputComponent->BindAxis("CameraMove",this,&AAvatar::CameraMove);
+	
 
 }
 
@@ -60,3 +61,5 @@ void AAvatar::CameraMove(float amount)
 		AddControllerYawInput(amount);
 	}
 }
+
+

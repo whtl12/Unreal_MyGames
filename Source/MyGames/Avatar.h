@@ -31,5 +31,7 @@ public:
 	void MoveRight(float amount);
 
 	void CameraMove(float amount);
+
+
 	
 };
