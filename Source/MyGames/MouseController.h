@@ -15,7 +15,6 @@ class MYGAMES_API AMouseController : public APlayerController
 	GENERATED_BODY()
 
 public:
-	virtual void SetupInputComponent() override;
-	void IsOnMouseCusor(float amount);
+
 	
 };

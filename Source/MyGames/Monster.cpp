@@ -2,19 +2,18 @@
 
 #include "Monster.h"
 
+AMonster::AMonster()
+{
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+}
+
 
 // Sets default values
-AMonster::AMonster()
+AMonster::AMonster(int regenPosition, int monsterWorkingAround, float damage, float defense)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
-	MyIntProp = 42;
-
-	//MyCollisionComp = CreateDefaultSubobject<USphereComponent>(FName(TEXT("CollisionComponent")));
-	//MyCollisionComp->RelativeLocation = FVector::ZeroVector;
-	//MyCollisionComp->SphereRadius = 20.0f;
-
 }
 
 // Called when the game starts or when spawned
@@ -28,6 +27,16 @@ void AMonster::BeginPlay()
 void AMonster::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+}
+
+void AMonster::PlayAnimation(MonsterAnimarion anim)
+{
+
+}
+
+void AMonster::Attack() 
+{
 
 }
 
