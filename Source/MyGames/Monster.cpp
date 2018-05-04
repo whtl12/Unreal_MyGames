@@ -40,3 +40,15 @@ void AMonster::Attack()
 
 }
 
+
+
+void AMonster::AI()
+{
+
+}
+
+void AMonster::Die()
+{
+
+}
+

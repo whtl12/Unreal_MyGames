@@ -12,7 +12,7 @@ class MYGAMES_API AMonster : public AActor
 	GENERATED_BODY()
 	
 public:	
-	enum MonsterAnimarion {
+	enum class MonsterAnimarion {
 		Idle,
 		Attack,
 		Die,
@@ -24,9 +24,7 @@ public:
 	AMonster();
 	AMonster(int regenPosition, int monsterWorkingAround, float damage , float defense);
 
-	void AI(); // 몬스터가 유저가 없으면 주위를 돌아다니고 유저를 발견하면 가까이 가는것.
-	void Die(); // 몬스터가 죽음.
-
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -40,6 +38,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void PlayAnimation(MonsterAnimarion anim);
 	virtual void Attack();
+	void AI(); // 몬스터가 유저가 없으면 주위를 돌아다니고 유저를 발견하면 가까이 가는것.
+	void Die(); // 몬스터가 죽음.
+
 	
 	
 };
